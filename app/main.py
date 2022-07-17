@@ -2,6 +2,7 @@ from fastapi import FastAPI
 from core.config import settings
 from db.db import initiate_database
 from routes.user import router as UserRouter
+from fastapi.middleware.cors import CORSMiddleware
 
 
 # Create new fastapi app instance
